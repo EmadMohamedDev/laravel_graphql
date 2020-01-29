@@ -166,7 +166,8 @@ return [
         Felixkiss\UniqueWithValidator\ServiceProvider::class,
         Orangehill\Iseed\IseedServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-
+        Rebing\GraphQL\GraphQLServiceProvider::class,
+        MLL\GraphQLPlayground\GraphQLPlaygroundServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -232,8 +233,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'Image' => Intervention\Image\Facades\Image::class
-
+        'Image' => Intervention\Image\Facades\Image::class,
+        'GraphQL' => 'Rebing\GraphQL\Support\Facades\GraphQL',
 
     ],
 
